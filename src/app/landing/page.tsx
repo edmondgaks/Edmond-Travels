@@ -36,7 +36,7 @@ const Landing = () => {
                         <div className="h-8 w-[2px] bg-[#37454D]"></div>
                         <div className="flex flex-row w-[30%] items-center gap-2">
                             <UserCircle2 size={20} />
-                            <input type="text" className="w-[80%] p-3 text-xs placeholder:text-[#37454D]" placeholder="Traveler - Class" />
+                            <input type="text" className="w-[80%] p-3 border-none text-xs placeholder:text-[#37454D]" placeholder="Traveler - Class" />
                         </div>
                         <div className="h-8 w-[2px] bg-[#37454D]"></div>
                         <button className="w-[25%] rounded-md bg-[#276968] text-white p-3 flex flex-row justify-center items-center gap-3">
