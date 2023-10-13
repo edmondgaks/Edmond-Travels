@@ -55,17 +55,17 @@ const Discover = () => {
                         <h1 className="text-2xl font-semibold text-white">Flights</h1>
                         <p className="text-white text-sm text-center opacity-90 text-medium">Search flights & places and book for your amazing trips.</p>
                         <div className="w-[50%] justify-center rounded-sm bg-white flex flex-row px-2 py-3 gap-2 items-center">
-                            <Navigation size={20} />
+                            <Navigation stroke="#276968" size={20} />
                             <p className="text-[#276968] text-sm font-semibold ">Show Flights</p>
                         </div>
                     </div>
                 </div>
                 <div className="w-[35%] bg-[url('/hotels.png')] rounded-lg bg-cover h-[65vh] p-10">
-                    <div className="w-[80%] mx-auto h-full  flex gap-2 flex-col justify-end items-center">
+                    <div className="w-[80%] mx-auto h-full flex gap-2 flex-col justify-end items-center">
                         <h1 className="text-2xl font-semibold text-white">Hotels</h1>
                         <p className="text-white text-sm text-center opacity-90 text-medium">Search our best hotels & places and book for your  amazing trips..</p>
                         <div className="w-[50%] justify-center rounded-sm bg-white flex flex-row px-2 py-3 gap-2 items-center">
-                            <Navigation size={20} />
+                            <Navigation stroke="#276968" size={20} />
                             <p className="text-[#276968] text-sm font-semibold ">Show Hotels</p>
                         </div>
                     </div>
