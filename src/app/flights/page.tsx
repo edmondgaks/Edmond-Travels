@@ -1,6 +1,5 @@
 import Header from "../components/Header"
 import { MapPin, UserCircle2, Calendar, Navigation, Search } from "lucide-react"
-import Image from "next/image"
 
 const Flights = () => {
     return (
