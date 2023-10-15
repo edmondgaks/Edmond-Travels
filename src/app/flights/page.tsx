@@ -1,7 +1,8 @@
+"use client";
 import Header from "../components/Header"
 import { MapPin, UserCircle2, Calendar, Navigation, Search } from "lucide-react"
 import Footer from "../footer/page"
-
+import Image from "next/image";
 const Flights = () => {
     return (
         <div className="w-full h-full">
@@ -135,6 +136,26 @@ const Flights = () => {
                         <p className="text-[#051721] font-semibold text-xl">Discover your love</p>
                     </div>
                     <button className="border border-[#276968] rounded-md text-[#276968] hover:bg-[#276968] hover:text-white text-sm px-5 py-3">See all</button>
+                </div>
+                <div className="w-full flex flex-row justify-evenly items-center h-[50vh] gap-4">
+                    <div className="w-[40%] bg-[#276968] h-full flex flex-col justify-between px-6 py-4 rounded-lg">
+                        <div className="flex flex-col gap-6 justify-center">
+                            <div className="flex flex-row justify-between">
+                                <h1 className="text-3xl w-[60%] font-semibold text-white">Kayaking in Baja California</h1>
+                                <div className="bg-white p-1 h-[60%] text-center rounded-md  text-xs">From <span className="text-[#276968] text-sm">$600</span></div>
+                            </div>
+                            <p className="font-thin text-xs text-white opacity-70">Adventure cruising is more than a growing trend to connect with nature, wildlife, and yourself. It's a community of adventurers that is here to stay. With luxurious accommodations and unmatched scenery, our Baja kayaking is the perfect escape.</p>
+                        </div>
+                        <button className="w-full rounded-md p-2 text-center text-[#276968] bg-white">
+                            Book flight
+                        </button>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4 h-full">
+                        <Image src={"/place1.png"} width={260} height={260} alt="places" />
+                        <Image src={"/place2.png"} width={260} height={260} alt="places" />
+                        <Image src={"/place3.png"} width={260} height={260} alt="places" />
+                        <Image src={"/place4.png"} width={260} height={260} alt="places" />
+                    </div>
                 </div>
             </div>
             <Footer />
