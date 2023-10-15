@@ -64,19 +64,19 @@ const Houses = () => {
         <>
 
             {WishListOptions.map((wishlist) => (
-                <div key={wishlist.id} className="flex flex-row w-[98%]  mb-5 h-[45vh] bg-white rounded-md">
-                    <div className="w-[40%] relative overflow-hidden">
+                <div key={wishlist.id} className="flex flex-row w-[98%]  mb-5 h-[40vh] bg-white rounded-md">
+                    <div className="w-[50%] relative overflow-hidden">
                         <Image fill src={wishlist.imageSrc} alt="favourites" className="object-cover rounded-l-md w-full object-full" />
                         <div className="absolute top-3 right-3">
                             <div className="">
-                                <p>{wishlist.images}</p>
+                                <p className="p-1 rounded-md">{wishlist.images}</p>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col p-5 gap-3 relative w-full">
                         <p className="text-xl font-bold w-[50%]">{wishlist.name}</p>
                         <div className="flex flex-row">
-                            <MdLocationOn size={16} />
+                            <MdLocationOn size={16} />  
                             <p className="text-xs font-thin">{wishlist.location}</p>
                         </div>
                         <div className="flex flex-row gap-4">

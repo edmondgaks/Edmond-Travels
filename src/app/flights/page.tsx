@@ -1,5 +1,6 @@
 import Header from "../components/Header"
 import { MapPin, UserCircle2, Calendar, Navigation, Search } from "lucide-react"
+import Footer from "../footer/page"
 
 const Flights = () => {
     return (
@@ -128,7 +129,15 @@ const Flights = () => {
                         <button className="bg-white rounded-md p-3 hover:text-white hover:bg-[#276968] text-xs text-[#276968] text-center">Book Flight</button>
                     </div>
                 </div>
+                <div className="w-full flex flex-row justify-between items-center">
+                    <div className="flex flex-col justify-center gap-1">
+                        <p className="text-[#276968] text-sm font-semibold">Top Destinations</p>
+                        <p className="text-[#051721] font-semibold text-xl">Discover your love</p>
+                    </div>
+                    <button className="border border-[#276968] rounded-md text-[#276968] hover:bg-[#276968] hover:text-white text-sm px-5 py-3">See all</button>
+                </div>
             </div>
+            <Footer />
         </div>
     )
 }
