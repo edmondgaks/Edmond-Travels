@@ -76,14 +76,25 @@ const Auth = () => {
                             className="p-2 rounded-md border-[1px] border-[#9BA2A6] placeholder:text-xs"
                         />
                     </div>
-                    <div className="flex flex-col gap-1">
-                        <h1 className="text-xs font-medium">Email</h1>
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="edmondgaks@gmail.com"
-                            className="p-2 rounded-md border-[1px] border-[#9BA2A6] placeholder:text-xs"
-                        />
+                    <div className="flex flex-row justify-between w-full">
+                        <div className="flex flex-col gap-1 w-[48%]">
+                            <h1 className="text-xs font-medium">Email</h1>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="edmondgaks@gmail.com"
+                                className="p-2 rounded-md border-[1px] border-[#9BA2A6] placeholder:text-xs"
+                            />
+                        </div>
+                        <div className="flex flex-col gap-1 w-[48%]">
+                            <h1 className="text-xs font-medium">Phone Number</h1>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="233 034 3456 578"
+                                className="p-2 rounded-md border-[1px] border-[#9BA2A6] placeholder:text-xs"
+                            />
+                        </div>
                     </div>
                     <div className="flex flex-col gap-1">
                         <h1 className="text-xs font-medium">Password</h1>

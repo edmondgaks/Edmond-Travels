@@ -10,7 +10,7 @@ const Flights = () => {
                 <div className="w-[40%] h-full text-white flex flex-col items-center justify-center gap-4">
                     <div className="font-semibold text-3xl text-center text-[#FCFCFC]">Create your travel wish list and leave the rest for us.</div>
                     <div className="font-medium text-base opacity-90">Special offers to suit your plan.</div>
-                </div>
+                </div>  
                 <div className="bg-white p-3 w-[60%] flex flex-row items-center justify-evenly text-xs gap-3 text-[#37454D] rounded-md absolute inset-x-0 bottom-40 mx-auto">
                     <div className="flex flex-row items-center w-[20%] gap-2">
                         <MapPin size={20} />
@@ -131,7 +131,7 @@ const Flights = () => {
                 </div>
                 <div className="w-full flex flex-row justify-between items-center">
                     <div className="flex flex-col justify-center gap-1">
-                        <p className="text-[#276968] text-sm font-semibold">Top Destinations</p>
+                        <p className="text-[#276968] text-sm font-semibold">Top Hotels</p>
                         <p className="text-[#051721] font-semibold text-xl">Discover your love</p>
                     </div>
                     <button className="border border-[#276968] rounded-md text-[#276968] hover:bg-[#276968] hover:text-white text-sm px-5 py-3">See all</button>

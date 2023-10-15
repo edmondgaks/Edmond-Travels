@@ -125,7 +125,7 @@ const Hotels = () => {
         <div className="w-full h-full">
             <Header />
             <div className="w-full flex flex-row p-10">
-                <div className="flex flex-col w-[30%] gap-5 bg-[#FAFBFC] h-[80vh]">
+                <div className="flex flex-col p-3 w-[30%] gap-5 bg-[#FAFBFC] h-[110vh]">
                     <div className="text-base p-3 rounded-sm bg-[#051721] text-white  font-semibold">Filters</div>
                     <div className="text-sm font-semibold">Price</div>
                     <PriceSlider />
