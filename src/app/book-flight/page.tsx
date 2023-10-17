@@ -6,93 +6,42 @@ import Flights from "./flights/flights";
 import { FaUser } from "react-icons/fa";
 import PriceSlider from "../components/Slider";
 
-const aminities = [
+const trips = [
     {
         id: "1",
-        desc: "24hr front desk"
+        desc: "Round Trip"
     },
     {
         id: "2",
-        desc: "Air conditioned"
+        desc: "One-way"
     },
     {
         id: "3",
-        desc: "Fitness"
+        desc: "Multi-City"
     },
     {
         id: "4",
-        desc: "Pool"
+        desc: "Flexible dates"
     }
 ]
 
-const freebies = [
+const airlines = [
     {
         id: "1",
-        desc: "Free parking"
+        desc: "Ghana Airways"
     },
     {
         id: "2",
-        desc: "Free breakfast"
+        desc: "British Midland Airways Linited"
     },
     {
         id: "3",
-        desc: "Free internet"
+        desc: "United Airlines"
     },
     {
         id: "4",
-        desc: "Free cancellation"
+        desc: "Delta Airlines"
     }
-]
-
-const WishListOptions = [
-    {
-        id: "1",
-        images: "9 images",
-        name: "Atlantis, The Palm",
-        location: "Crescent Rd - The Palm Jumeirah - Dubai - United Arab Emirates",
-        stars: "5 Stars Hotel",
-        aminities: "20+ Aminities",
-        rate: "Very Good",
-        reviews: "Amazing hotel (50 reviews)",
-        amount: "710",
-        imageSrc: "/fav1.jpeg",
-    },
-    {
-        id: "2",
-        images: "9 images",
-        name: "Sofitel Dubai The Obelisk",
-        location: "Sheikh Rashid Rd - Umm Hurair 2 - Dubai - United Arab Emirates",
-        stars: "5 Stars Hotel",
-        aminities: "20+ Aminities",
-        rate: "Very Good",
-        reviews: "371 Reviews",
-        amount: "240",
-        imageSrc: "/fav2.jpeg",
-    },
-    {
-        id: "3",
-        images: "9 images",
-        name: "Citymax Hotel Bur Dubai",
-        location: "Kuwait Street, Mankhool - Dubai - United Arab Emirates",
-        stars: "5 Stars Hotel",
-        aminities: "20+ Aminities",
-        rate: "Very Good",
-        reviews: "371 Reviews",
-        amount: "240",
-        imageSrc: "/fav3.jpeg",
-    },
-    {
-        id: "4",
-        images: "9 images",
-        name: "Five Palm Jumeirah Dubai",
-        location: " No. 1 Palm - Dubai - United Arab Emirates",
-        stars: "5 Stars Hotel",
-        aminities: "20+ Aminities",
-        rate: "Very Good",
-        reviews: "371 Reviews",
-        amount: "240",
-        imageSrc: "/fav3.jpeg",
-    },
 ]
 
 const rates = [
@@ -127,26 +76,28 @@ const BookFlights = () => {
             <div className="w-full flex flex-row p-10 gap-6">
                 <div className="flex flex-col p-3 w-[30%] gap-5 bg-[#FAFBFC] h-[110vh]">
                     <div className="text-base p-3 rounded-sm bg-[#051721] text-white  font-semibold">Filters</div>
-                    <div className="text-sm font-semibold">Price</div>
+                    <div className="text-sm font-semibold">Price Range</div>
+                    <PriceSlider />
+                    <div className="text-sm font-semibold">Departure Time</div>
                     <PriceSlider />
                     <div className="w-full border border-[#ACACAC] opacity-30"></div>
-                    <div className="text-base font-semibold mt-2">Amenities</div>
+                    <div className="text-base font-semibold mt-2">Trips</div>
                     <div className="flex flex-col gap-2 justify-center">
-                        {aminities.map((aminity) => (
-                            <div key={aminity.id} className="flex flex-row gap-2 items-center">
+                        {trips.map((trip) => (
+                            <div key={trip.id} className="flex flex-row gap-2 items-center">
                                 <input type="checkbox" />
-                                <div className="text-xs font-medium">{aminity.desc}</div>
+                                <div className="text-xs font-medium">{trip.desc}</div>
                             </div>
                         ))}
                     </div>   
                     <div className="w-full border border-[#ACACAC] opacity-30"></div>
 
-                    <div className="text-base font-semibold mt-2">Freebies</div>
+                    <div className="text-base font-semibold mt-2">Airlines</div>
                     <div className="flex flex-col gap-2 justify-center">
-                        {freebies.map((freeby) => (
-                            <div key={freeby.id} className="flex flex-row gap-2 items-center">
+                        {airlines.map((airline) => (
+                            <div key={airline.id} className="flex flex-row gap-2 items-center">
                                 <input type="checkbox" />
-                                <div className="text-xs font-medium">{freeby.desc}</div>
+                                <div className="text-xs font-medium">{airline.desc}</div>
                             </div>
                         ))}
                     </div>   
