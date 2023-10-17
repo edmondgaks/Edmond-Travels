@@ -10,23 +10,23 @@ const WishListOptions = [
     {
         id: "1",
         images: "9 images",
-        name: "CVK Park Bosphorus Hotel Istanbul",
-        location: "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+        name: "Atlantis, The Palm",
+        location: "Crescent Rd - The Palm Jumeirah - Dubai - United Arab Emirates",
         stars: "5 Stars Hotel",
         aminities: "20+ Aminities",
-        rate: "Very Good",
-        reviews: "371 Reviews",
-        amount: "240",
+        rate: "Amazing Hotel",
+        reviews: "50 reviews",
+        amount: "710",
         imageSrc: "/fav1.jpeg",
     },
     {
         id: "2",
         images: "9 images",
-        name: "Eresin Hotels Sultanahmet - Boutique Class",
-        location: "Kucukayasofya No. 40 Sultanahmet, Istanbul 34022",
+        name: "Sofitel Dubai The Obelisk",
+        location: "Sheikh Rashid Rd - Umm Hurair 2 - Dubai - United Arab Emirates",
         stars: "5 Stars Hotel",
         aminities: "20+ Aminities",
-        rate: "Very Good",
+        rate: "Amazing Hotel",
         reviews: "371 Reviews",
         amount: "240",
         imageSrc: "/fav2.jpeg",
@@ -34,11 +34,11 @@ const WishListOptions = [
     {
         id: "3",
         images: "9 images",
-        name: "Eresin Hotels Sultanahmet - Boutique Class",
-        location: "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+        name: "Citymax Hotel Bur Dubai",
+        location: "Kuwait Street, Mankhool - Dubai - United Arab Emirates",
         stars: "5 Stars Hotel",
         aminities: "20+ Aminities",
-        rate: "Very Good",
+        rate: "Amazing Hotel",
         reviews: "371 Reviews",
         amount: "240",
         imageSrc: "/fav3.jpeg",
@@ -46,17 +46,16 @@ const WishListOptions = [
     {
         id: "4",
         images: "9 images",
-        name: "Eresin Hotels Sultanahmet - Boutique Class",
-        location: "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+        name: "Five Palm Jumeirah Dubai",
+        location: " No. 1 Palm - Dubai - United Arab Emirates",
         stars: "5 Stars Hotel",
         aminities: "20+ Aminities",
-        rate: "Very Good",
+        rate: "Amazing Hotel",
         reviews: "371 Reviews",
         amount: "240",
-        imageSrc: "/home5.jpeg",
+        imageSrc: "/fav3.jpeg",
     },
 ]
-
 
 
 const Houses = () => {
@@ -64,7 +63,7 @@ const Houses = () => {
         <>
 
             {WishListOptions.map((wishlist) => (
-                <div key={wishlist.id} className="flex flex-row w-[98%]  mb-5 h-[40vh] bg-white rounded-md">
+                <div key={wishlist.id} className="flex flex-row w-[98%] shadow-sm mb-5 h-[40vh] bg-white rounded-md">
                     <div className="w-[50%] relative overflow-hidden">
                         <Image fill src={wishlist.imageSrc} alt="favourites" className="object-cover rounded-l-md w-full object-full" />
                         <div className="absolute top-3 right-3">
@@ -74,7 +73,7 @@ const Houses = () => {
                         </div>
                     </div>
                     <div className="flex flex-col p-5 gap-3 relative w-full">
-                        <p className="text-xl font-bold w-[50%]">{wishlist.name}</p>
+                        <p className="text-lg font-bold w-[50%]">{wishlist.name}</p>
                         <div className="flex flex-row">
                             <MdLocationOn size={16} />  
                             <p className="text-xs font-thin">{wishlist.location}</p>
@@ -89,13 +88,13 @@ const Houses = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="flex flex-row">
+                        <div className="flex flex-row items-center">
                             <div className="border-solid border p-2 rounded-md border-teal-400 text-xs">4.2</div>
-                            <p className="text-xs font-semibold p-2">{wishlist.rate}</p>
-                            <p className="text-xs font-light p-2">{wishlist.reviews}</p>
+                            <p className="text-xs font-semibold p-1">{wishlist.rate}</p>
+                            <p className="text-xs font-light p-1">{wishlist.reviews}</p>
                         </div>
                         <div className="flex w-[100%] border border-gray-300"></div>
-                        <div className="flex flex-row gap-10">
+                        <div className="flex flex-row gap-4">
                             <div className="border-solid border p-3 rounded-md border-teal-400 text-xs">
                                 <Heart size={18} />
                             </div>
