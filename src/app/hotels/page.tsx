@@ -4,6 +4,8 @@ import { MapPin, UserCircle2, Calendar, Navigation, Search } from "lucide-react"
 import Footer from "../footer/page"
 import Image from "next/image";
 import Link from "next/link";
+
+
 const Hotels = () => {
     return (
         <div className="w-full h-full">
