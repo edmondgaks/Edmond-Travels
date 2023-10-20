@@ -1,75 +1,35 @@
 import { MapPin, Navigation } from "lucide-react"
 import Image from "next/image"
+import Header from "../components/Header"
 
 const Discover = () => {
     return (
-        <div className="p-10 flex flex-col gap-4 w-full">
-            <div className="w-full flex flex-row justify-between items-center">
-                <div className="flex flex-col justify-center gap-1">
-                    <p className="text-[#276968] text-sm font-semibold">Top Destinations</p>
-                    <p className="text-[#051721] font-semibold text-xl">Discover your love</p>
-                </div>
-                <button className="border border-[#276968] rounded-md text-[#276968] hover:bg-[#276968] hover:text-white text-sm px-5 py-3">See all</button>
-            </div>
-            <div className="w-full mb-10 flex flex-row gap-3 items-center justify-between">
-                <div className="flex flex-col gap-2 p-3 rounded-lg shadow-lg bg-[#FAFBFC]">
-                    <Image src={"/discover1.png"} width={400} height={400} alt="thailand" className="" />
-                    <div className="w-full flex flex-row items-center justify-between">
-                        <div className="flex flex-col gap-1 justify-center">
-                            <h1 className="text-[#276968] text-xl font-semibold">Phuket</h1>
-                            <div className="flex flex-row gap-1 items-center">
-                                <MapPin size={14} color="#69747A" />
-                                <p className="text-[#69747A] text-xs">Thailand</p>
-                            </div>
+        <div className="w-full h-full">
+            <Header />
+            <div className="bg-[url('/discoverImage.png')]  w-full bg-center h-[60vh] bg-cover"></div>
+            <div className="flex flex-row  gap-4 w-full p-10">
+                <div className="w-[55%] flex flex-col gap-8 justify-center">
+                    <h1 className="text-lg font-semibold">South Island</h1>
+                    <p className="text-sm font-light">The South Island of New Zealand is renowned for its mountains, lakes and glaciers. The Southern Alps, home to 3,724m-high Aoraki Mt. Cook, run along the entire length of the island. In the southwest is Fiordland National Park, with steep-sided Milford Sound.</p>
+                    <p className="text-sm">In the north is Abel Tasman National Park, known for its trails and ocean kayaking. Queenstown is famed for adventure sports like bungee jumping and skiing.</p>
+                    <Image src={"/discovering1.png"} width={500} className="w-full" height={500} alt="Discovering places" />
+                    <div className="flex flex-col justify-center">
+                        <h1 className="text-lg font-semibold">Natural geographic features</h1>
+                        <div className="flex flex-row gap-2 items-center">
+                            <MapPin size={18} fill="#FF6F6B" stroke="#FF6F6B" />
+                            <p className="text-sm font-medium text-gray-500">New Zealand </p>
                         </div>
                     </div>
-                </div>
-                <div className="flex flex-col gap-2 p-3 rounded-lg shadow-lg bg-[#FAFBFC]">
-                    <Image src={"/discover2.png"} width={400} height={400} alt="thailand" className="" />
-                    <div className="w-full flex flex-row items-center justify-between">
-                        <div className="flex flex-col gap-1 justify-center">
-                            <h1 className="text-[#276968] text-xl font-semibold">Santarin</h1>
-                            <div className="flex flex-row gap-1 items-center">
-                                <MapPin size={14} color="#69747A" />
-                                <p className="text-[#69747A] text-xs">Greece</p>
-                            </div>
-                        </div>
+                    <p className="text-sm font-light">The South Island has 15 named maritime fiords which are all located in the southwest of the island in a mountainous area known as Fiordland. The spelling 'fiord' is used in New Zealand rather than 'fjord', although all the maritime fiords use the word Sound in their name instead.</p>
+                    <p className="font-light text-sm">A number of lakes in the Fiordland and Otago regions also fill glacial valleys. Lake Te Anau has three western arms which are fiords (and are named so). Lake McKerrow / Whakatipu Waitai to the north of Milford Sound / Piopiotahi is a fiord with a silted-up mouth. Lake Wakatipu fills a large glacial valley, as do lakes Hakapoua, Poteriteri, Monowai and Hauroko in the far south of Fiordland. Lake Manapouri has fiords as its west, north and south arms..</p>
+                    <div className="flex flex-row gap-2 items-center">
+                        <Image src={"/discovering2.png"} width={300} className="w-full" height={300} alt="Discovering places" />
+                        <Image src={"/discovering3.png"} width={300} className="w-full" height={300} alt="Discovering places" />
                     </div>
+                    <p className="font-light text-sm">Most of New Zealand's glaciers are in the South Island. They are generally found in the Southern Alps near the Main Divide.</p>
+                    <p className="font-light text-sm">An inventory of South Island glaciers during the 1980s indicated there were about 3,155 glaciers with an area of at least one hectare (2.5 acres).[60] About a sixth of these glaciers covered more than 10 hectares. These include the Fox and Franz Josef glaciers on the West Coast, and the Haupapa / Tasman, Hooker, Mueller and Murchison glaciers in the east.</p>
                 </div>
-                <div className="flex flex-col gap-2 p-3 rounded-lg shadow-lg bg-[#FAFBFC]">
-                    <Image src={"/discover2.png"} width={400} height={400} alt="thailand" className="" />
-                    <div className="w-full flex flex-row items-center justify-between">
-                        <div className="flex flex-col gap-1 justify-center">
-                            <h1 className="text-[#276968] text-xl font-semibold">Paris </h1>
-                            <div className="flex flex-row gap-1 items-center">
-                                <MapPin size={14} color="#69747A" />
-                                <p className="text-[#69747A] text-xs">France</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="w-full flex flex-row items-center justify-evenly">
-                <div className="w-[35%] bg-[url('/flights.png')] rounded-lg bg-cover h-[65vh] p-10">
-                    <div className="w-[80%] mx-auto h-full  flex gap-2 flex-col justify-end items-center">
-                        <h1 className="text-2xl font-semibold text-white">Flights</h1>
-                        <p className="text-white text-sm text-center opacity-90 text-medium">Search flights & places and book for your amazing trips.</p>
-                        <div className="w-[50%] justify-center rounded-sm bg-white flex flex-row px-2 py-3 gap-2 items-center">
-                            <Navigation stroke="#276968" size={20} />
-                            <p className="text-[#276968] text-sm font-semibold ">Show Flights</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="w-[35%] bg-[url('/hotels.png')] rounded-lg bg-cover h-[65vh] p-10">
-                    <div className="w-[80%] mx-auto h-full flex gap-2 flex-col justify-end items-center">
-                        <h1 className="text-2xl font-semibold text-white">Hotels</h1>
-                        <p className="text-white text-sm text-center opacity-90 text-medium">Search our best hotels & places and book for your  amazing trips..</p>
-                        <div className="w-[50%] justify-center rounded-sm bg-white flex flex-row px-2 py-3 gap-2 items-center">
-                            <Navigation stroke="#276968" size={20} />
-                            <p className="text-[#276968] text-sm font-semibold ">Show Hotels</p>
-                        </div>
-                    </div>
-                </div>
+                <div className="w-[40%]"></div>
             </div>
         </div>
     )

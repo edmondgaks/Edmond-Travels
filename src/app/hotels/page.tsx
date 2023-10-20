@@ -4,44 +4,19 @@ import { MapPin, UserCircle2, Calendar, Navigation, Search } from "lucide-react"
 import Footer from "../footer/page"
 import Image from "next/image";
 import Link from "next/link";
+import SearchBar from "../components/SearchBar";
 
 
 const Hotels = () => {
     return (
         <div className="w-full h-full">
             <Header />
-            <div className="bg-[url('/hotel-image.png')] flex flex-col justify-center items-center w-full bg-center h-[70vh] bg-cover">
+            <div className="bg-[url('/hotel-image.png')] flex flex-col p-10 justify-center items-center w-full bg-center h-[70vh] bg-cover">
                 <div className="w-[40%] h-full text-white flex flex-col items-center justify-center gap-4">
                     <div className="font-semibold text-3xl text-center text-[#FCFCFC]">Create your travel wish list and leave the rest for us.</div>
                     <div className="font-medium text-base opacity-90">Special offers to suit your plan.</div>
                 </div>  
-                <div className="bg-white p-3 w-[60%] flex flex-row items-center justify-evenly text-xs gap-3 text-[#37454D] rounded-md absolute inset-x-0 bottom-40 mx-auto">
-                    <div className="flex flex-row items-center w-[20%] gap-2">
-                        <MapPin size={20} />
-                        {/* <p>From</p> */}
-                        <input type="text" className="w-[80%] p-3 text-xs placeholder:text-[#37454D]" placeholder="From" />
-                    </div>
-                    <div className="h-8 w-[2px] bg-[#37454D]"></div>
-                    <div className="flex flex-row w-[20%] items-center gap-2">
-                        <Navigation size={20} />
-                        <input type="text" className="w-[80%] p-3 text-xs placeholder:text-[#37454D]" placeholder="To" />
-                    </div>
-                    <div className="h-8 w-[2px] bg-[#37454D]"></div>
-                    <div className="flex flex-row w-[20%] items-center gap-2">
-                        <Calendar size={20} />
-                        <input type="text" className="w-[80%] p-3 text-xs placeholder:text-[#37454D]" placeholder="Date" />
-                    </div>
-                    <div className="h-8 w-[2px] bg-[#37454D]"></div>
-                    <div className="flex flex-row w-[30%] items-center gap-2">
-                        <UserCircle2 size={20} />
-                        <input type="text" className="w-[80%] p-3 border-none text-xs placeholder:text-[#37454D]" placeholder="Traveler - Class" />
-                    </div>
-                    <div className="h-8 w-[2px] bg-[#37454D]"></div>
-                    <button className="w-[25%] rounded-md bg-[#276968] text-white p-3 flex flex-row justify-center items-center gap-3">
-                        <p>Find Trip now</p>
-                        <Search />
-                    </button>
-                </div>
+                <SearchBar />
             </div>
             <div className="p-10 flex flex-col gap-10 w-full">
                 <div className="w-full flex flex-row justify-between items-center">
