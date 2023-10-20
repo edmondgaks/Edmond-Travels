@@ -1,6 +1,7 @@
 import { MapPin, Navigation } from "lucide-react"
 import Image from "next/image"
 import Header from "../components/Header"
+import Footer from "../footer/page"
 
 const Discover = () => {
     return (
@@ -30,15 +31,40 @@ const Discover = () => {
                     <p className="font-light text-sm">An inventory of South Island glaciers during the 1980s indicated there were about 3,155 glaciers with an area of at least one hectare (2.5 acres).[60] About a sixth of these glaciers covered more than 10 hectares. These include the Fox and Franz Josef glaciers on the West Coast, and the Haupapa / Tasman, Hooker, Mueller and Murchison glaciers in the east.</p>
                 </div>
                 <div className="w-[40%]">
-                    <div className="w-[90%] flex flex-col gap-4">
+                    <div className="w-[90%] flex flex-col gap-6">
                         <Image src={"/Map.png"} width={500} className="w-full" height={500} alt="Discovering places" />
                         <div className="flex flex-row w-full justify-between items-center">
                             <p className="text-base font-semibold">Other destinations</p>
                             <button className="border border-[#276968] rounded-md text-[#276968] hover:bg-[#276968] hover:text-white text-sm px-4 py-3">See all</button>
                         </div>
+                        <div className="w-full bg-[url('/mawi.png')] text-white bg-cover rounded-md bg-center h-[35vh] flex flex-col p-6 gap-1 justify-center">
+                            <h1 className="text-lg font-[500] opacity-90 ">The Island of Maui</h1>
+                            <div className="flex flex-row gap-2 items-center">
+                                <MapPin size={18} />
+                                <p className="text-xs font-light opacity-90">Hawaii</p>
+                            </div>
+                            <button className="bg-white justify-self-end rounded-md p-3 hover:text-white w-[25%] hover:bg-[#276968] text-xs text-[#276968] text-center">View more</button>
+                        </div>
+                        <div className="w-full bg-[url('/caicos.png')] text-white bg-cover rounded-md bg-center h-[35vh] flex flex-col p-6 gap-1 justify-center">
+                            <h1 className="text-lg font-[500] opacity-90 ">Turks and Caicos Islands</h1>
+                            <div className="flex flex-row gap-2 items-center">
+                                <MapPin size={18} />
+                                <p className="text-xs font-light opacity-90">North of Dominican Republic</p>
+                            </div>
+                            <button className="bg-white justify-self-end rounded-md p-3 hover:text-white w-[25%] hover:bg-[#276968] text-xs text-[#276968] text-center">View more</button>
+                        </div>
+                        <div className="w-full bg-[url('/glacier.png')] text-white bg-cover rounded-md bg-center h-[35vh] flex flex-col p-6 gap-1 justify-center">
+                            <h1 className="text-lg font-[500] opacity-90 ">Glacier National Park</h1>
+                            <div className="flex flex-row gap-2 items-center">
+                                <MapPin size={18} />
+                                <p className="text-xs font-light opacity-90">Montana</p>
+                            </div>
+                            <button className="bg-white justify-self-end rounded-md p-3 hover:text-white w-[25%] hover:bg-[#276968] text-xs text-[#276968] text-center">View more</button>
+                        </div>
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
