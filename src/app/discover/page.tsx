@@ -7,7 +7,7 @@ const Discover = () => {
         <div className="w-full h-full">
             <Header />
             <div className="bg-[url('/discoverImage.png')]  w-full bg-center h-[60vh] bg-cover"></div>
-            <div className="flex flex-row  gap-4 w-full p-10">
+            <div className="flex flex-row justify-between w-full py-14 pl-14 ">
                 <div className="w-[55%] flex flex-col gap-8 justify-center">
                     <h1 className="text-lg font-semibold">South Island</h1>
                     <p className="text-sm font-light">The South Island of New Zealand is renowned for its mountains, lakes and glaciers. The Southern Alps, home to 3,724m-high Aoraki Mt. Cook, run along the entire length of the island. In the southwest is Fiordland National Park, with steep-sided Milford Sound.</p>
@@ -29,7 +29,15 @@ const Discover = () => {
                     <p className="font-light text-sm">Most of New Zealand's glaciers are in the South Island. They are generally found in the Southern Alps near the Main Divide.</p>
                     <p className="font-light text-sm">An inventory of South Island glaciers during the 1980s indicated there were about 3,155 glaciers with an area of at least one hectare (2.5 acres).[60] About a sixth of these glaciers covered more than 10 hectares. These include the Fox and Franz Josef glaciers on the West Coast, and the Haupapa / Tasman, Hooker, Mueller and Murchison glaciers in the east.</p>
                 </div>
-                <div className="w-[40%]"></div>
+                <div className="w-[40%]">
+                    <div className="w-[90%] flex flex-col gap-4">
+                        <Image src={"/Map.png"} width={500} className="w-full" height={500} alt="Discovering places" />
+                        <div className="flex flex-row w-full justify-between items-center">
+                            <p className="text-base font-semibold">Other destinations</p>
+                            <button className="border border-[#276968] rounded-md text-[#276968] hover:bg-[#276968] hover:text-white text-sm px-4 py-3">See all</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
