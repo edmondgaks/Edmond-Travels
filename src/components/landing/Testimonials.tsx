@@ -55,12 +55,12 @@ const Testimonials = () => {
 
   const currentTestimonial = testimonialsData[currentIndex];
     return (
-        <div className="w-full bg-[url('/testimonials.png')] flex flex-row items-center bg-cover h-[90vh] p-10">
+        <div className="w-full bg-[url('/testimonials.png')] flex flex-row items-center bg-cover h-[95vh] p-8">
             <div className="w-[20%] flex flex-col justify-center items-center">
                 <ChevronLeft size={80} color="#FFFFFF" onClick={handlePrev} />
             </div>
-            <div className="w-[60%] h-full mx-auto flex flex-col justify-start items-center gap-8">
-                <div className="flex flex-col gap-2 items-center">
+            <div className="w-[60%] h-full mx-auto flex flex-col justify-start items-center gap-6">
+                <div className="flex flex-col gap-1 items-center">
                     <p className="text-white text-sm opacity-90 font-medium">Testimonials</p>
                     <h1 className="text-2xl font-semibold text-white">What they say about us</h1>
                 </div>
