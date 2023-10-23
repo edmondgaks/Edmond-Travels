@@ -1,6 +1,6 @@
 const History = () => {
     return (
-        <div></div>
+        <div>History</div>
     )
 }
 

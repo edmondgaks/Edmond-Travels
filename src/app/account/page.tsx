@@ -2,10 +2,13 @@
 import Header from "@/components/Header";
 import Image from "next/image";
 import React, { useState } from "react";
+import AccountInfo from "./features/account";
+import History from "./features/history";
+import Payment from "./features/payment";
 
 
 const Account = () => {
-
+    const [showModalInfo, setShowModal] = useState<string>("account");
     return (
         <div className="w-full h-full">
             <Header />
@@ -21,16 +24,25 @@ const Account = () => {
                 </div>
                 <div className="w-full p-10">
                     <div className="bg-white shadow-md rounded-md shadow-slate-100 w-full mx-auto y-4 flex flex-row justify-between">
-                        <div className={`border-green-500 w-[35%] border-b-4 my-0 flex rounded-sm justify-center place-items-center flex-col py-2 px-4`}>
+                        <div className={`${showModalInfo === "account" ? "border-green-500 w-[35%] border-b-4 my-0 flex rounded-sm justify-center place-items-center flex-col py-2 px-4" : "text-center border-r-2 w-[35%] my-4 py-2 min-w-[30vw] px-4 border-slate-200"}`} onClick={() => setShowModal("account")}>
                             <h1 className="text-[14px]">Account</h1>
                         </div>
-                        <div className={`text-center border-r-2 w-[35%] my-4 py-2 min-w-[30vw] px-4 border-slate-200`}>
+                        <div className={`${showModalInfo === "history" ? "border-green-500 w-[35%] border-b-4 my-0 flex rounded-sm justify-center place-items-center flex-col py-2 px-4" : "text-center border-r-2 w-[35%] my-4 py-2 min-w-[30vw] px-4 border-slate-200"}`} onClick={() => setShowModal("history")}>
                             <h1 className="text-[14px]">History</h1>
                         </div>
-                        <div className={`border-l-[1px] my-4 py-2 w-[35%] min-w-[30vw] px-4 border-slate-200`}>
+                        <div className={`${showModalInfo === "payment" ? "border-green-500 w-[35%] border-b-4 my-0 flex rounded-sm justify-center place-items-center flex-col py-2 px-4" : "text-center border-r-2 w-[35%] my-4 py-2 min-w-[30vw] px-4 border-slate-200"}`} onClick={() => setShowModal("payment")}>
                             <h1 className="text-[14px]">Payment methods</h1>
                         </div>
                     </div>
+                    {showModalInfo === "account" &&
+                        <AccountInfo />
+                    }
+                    {showModalInfo === "history" &&
+                        <History />
+                    }
+                    {showModalInfo === "payment" &&
+                        <Payment />
+                    }
                 </div>
             </div>
         </div>
