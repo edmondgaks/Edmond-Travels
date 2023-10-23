@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import Header from "../components/Header"
-import Footer from "../footer/page"
+import Header from "@/components/Header"
+import Footer from "@/components/footer";
 import Houses from "./houses/houses";
 import { FaUser } from "react-icons/fa";
-import PriceSlider from "../components/Slider";
+import PriceSlider from "@/components/Slider";
 
 const aminities = [
     {

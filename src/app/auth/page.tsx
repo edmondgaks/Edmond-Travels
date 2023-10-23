@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Logo from "@/app/components/Logo"
+import Logo from "@/components/Logo"
 import Image from "next/image"
 
 const Auth = () => {

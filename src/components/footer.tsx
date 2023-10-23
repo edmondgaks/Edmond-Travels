@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react"
-import Logo from "../components/Logo"
+import Logo from "./Logo"
 type Link = {
     text: string;
     url?: string;

@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import Footer from './footer/page'
-import Landing from './landing/page'
-import TripPlan from './plan-trip/page'
-import Testimonials from './testimonials/page'
-import DiscoverLove from './components/DiscoverLove'
+import Footer from "@/components/footer"
+import DiscoverLove from '@/components/landing/DiscoverLove'
+import Testimonials from '@/components/landing/Testimonials'
+import Landing from '@/components/landing/landing'
+import TripPlan from '@/components/landing/TripPlan'
 
 export default function Home() {
   return (

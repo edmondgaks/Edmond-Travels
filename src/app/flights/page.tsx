@@ -1,10 +1,10 @@
 "use client";
-import Header from "../components/Header"
+import Header from "@/components/Header"
 import { MapPin, UserCircle2, Calendar, Navigation, Search } from "lucide-react"
-import Footer from "../footer/page"
+import Footer from "@/components/footer";
 import Image from "next/image";
 import Link from "next/link";
-import SearchBar from "../components/SearchBar";
+import SearchBar from "@/components/SearchBar";
 const Flights = () => {
     return (
         <div className="w-full h-full">

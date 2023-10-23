@@ -4,7 +4,7 @@ import * as React from "react";
 import { MdLocationOn } from "react-icons/md";
 import { RiCupFill } from "react-icons/ri";
 import { AiFillHeart } from "react-icons/ai";
-import StarContainer from "@/app/components/StarContainer";
+import StarContainer from "@/components/StarContainer";
 import { Heart } from "lucide-react";
 const WishListOptions = [
     {

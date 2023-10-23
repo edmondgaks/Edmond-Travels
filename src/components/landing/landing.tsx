@@ -1,7 +1,7 @@
 import { MapPin, UserCircle2, Calendar, Navigation, Search } from "lucide-react"
-import AuthButtons from "../components/AuthButton"
-import Logo from "../components/Logo"
-import Navbar from "../components/Navbar"
+import AuthButtons from "@/components/AuthButton"
+import Logo from "@/components/Logo"
+import Navbar from "@/components/Navbar"
 
 const Landing = () => {
     return (
