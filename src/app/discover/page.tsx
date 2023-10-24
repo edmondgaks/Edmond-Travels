@@ -21,13 +21,13 @@ const Discover = () => {
                             <p className="text-sm font-medium text-gray-500">New Zealand </p>
                         </div>
                     </div>
-                    <p className="text-sm font-light">The South Island has 15 named maritime fiords which are all located in the southwest of the island in a mountainous area known as Fiordland. The spelling 'fiord' is used in New Zealand rather than 'fjord', although all the maritime fiords use the word Sound in their name instead.</p>
+                    <p className="text-sm font-light">The South Island has 15 named maritime fiords which are all located in the southwest of the island in a mountainous area known as Fiordland. The spelling fiord is used in New Zealand rather than &apos;fjord&apos;, although all the maritime fiords use the word Sound in their name instead.</p>
                     <p className="font-light text-sm">A number of lakes in the Fiordland and Otago regions also fill glacial valleys. Lake Te Anau has three western arms which are fiords (and are named so). Lake McKerrow / Whakatipu Waitai to the north of Milford Sound / Piopiotahi is a fiord with a silted-up mouth. Lake Wakatipu fills a large glacial valley, as do lakes Hakapoua, Poteriteri, Monowai and Hauroko in the far south of Fiordland. Lake Manapouri has fiords as its west, north and south arms..</p>
                     <div className="flex flex-row gap-2 items-center">
                         <Image src={"/discovering2.png"} width={300} className="w-full" height={300} alt="Discovering places" />
                         <Image src={"/discovering3.png"} width={300} className="w-full" height={300} alt="Discovering places" />
                     </div>
-                    <p className="font-light text-sm">Most of New Zealand's glaciers are in the South Island. They are generally found in the Southern Alps near the Main Divide.</p>
+                    <p className="font-light text-sm">Most of New Zealand&apos;s glaciers are in the South Island. They are generally found in the Southern Alps near the Main Divide.</p>
                     <p className="font-light text-sm">An inventory of South Island glaciers during the 1980s indicated there were about 3,155 glaciers with an area of at least one hectare (2.5 acres).[60] About a sixth of these glaciers covered more than 10 hectares. These include the Fox and Franz Josef glaciers on the West Coast, and the Haupapa / Tasman, Hooker, Mueller and Murchison glaciers in the east.</p>
                 </div>
                 <div className="w-[40%]">

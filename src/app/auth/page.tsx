@@ -42,7 +42,7 @@ const Auth = () => {
                         <p className="text-xs text-[#FF6F6B]">Forgot Password?</p>
                     </div>
                     <button className="w-full rounded-md bg-[#276968] text-white text-sm p-3 text-center">Login</button>
-                    <div className="text-black text-xs mx-auto">Don't have an account? <span className="text-xs text-[#FF6F6B] cursor-pointer" onClick={() => {setSignup(true)}}>Sign up</span></div>
+                    <div className="text-black text-xs mx-auto">Don&apos;t have an account? <span className="text-xs text-[#FF6F6B] cursor-pointer" onClick={() => {setSignup(true)}}>Sign up</span></div>
                     <div className="flex flex-row items-center gap-2">
                         <div className="w-[40%] p-[0.4px] opacity-30 bg-[#051721]"></div>
                         <p className="text-xs text-[#051721] opacity-60">Or login with</p>
@@ -65,7 +65,7 @@ const Auth = () => {
                 <form className="bg-white w-[40%] rounded-md p-8 flex flex-col gap-3 justify-center">
                     <div className="flex flex-col gap-1 justify-center">
                         <h1 className="text-xl font-semibold text-[#051721] tracking-wider">Sign up</h1>
-                        <p className="text-[#37454D] text-xs opacity-90">Let's get you all set up so you can access your personal account.</p>
+                        <p className="text-[#37454D] text-xs opacity-90">Let&apos;s get you all set up so you can access your personal account.</p>
                     </div>
                     <div className="flex flex-col gap-1">
                         <h1 className="text-xs font-medium">Full Name</h1>

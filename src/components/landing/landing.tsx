@@ -13,7 +13,7 @@ const Landing = () => {
                     <AuthButtons />
                 </div>
                 <div className="w-full h-[80%] text-white flex flex-col items-center justify-center gap-4">
-                    <div className="font-semibold text-4xl text-[#FCFCFC]">Don't call it a dream. Call it a plan</div>
+                    <div className="font-semibold text-4xl text-[#FCFCFC]">Don&apos;t call it a dream. Call it a plan</div>
                     <div className="font-medium text-md opacity-90">Travel the way you wish to go with Phnes Travels helping you discover, live and travel at your own pace.</div>
                 </div>
                 <div className="bg-white p-3 w-[60%] flex flex-row items-center justify-evenly text-xs gap-3 text-[#37454D] rounded-md absolute inset-x-0 bottom-20 mx-auto">

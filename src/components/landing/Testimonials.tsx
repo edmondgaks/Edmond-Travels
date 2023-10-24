@@ -74,7 +74,7 @@ const Testimonials = () => {
                 {/* <Image src={currentTestimonial.image} width={100} height={100} alt={currentTestimonial.name} /> */}
                 <div className="w-full flex flex-row items-center justify-between">
                     {testimonialsData.map((testimonial, index) => (
-                        <Image src={testimonial.image} width={`${ index === currentIndex ? 140 : 100}`} height={`${ index === currentIndex ? 140 : 100}`} alt="user pic" />
+                        <Image key={index} src={testimonial.image} width={`${ index === currentIndex ? 140 : 100}`} height={`${ index === currentIndex ? 140 : 100}`} alt="user pic" />
                     ) )}
                 </div>
                 <div className="flex flex-row items-center gap-3">

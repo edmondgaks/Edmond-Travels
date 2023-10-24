@@ -138,7 +138,7 @@ const Hotels = () => {
                                 <h1 className="text-3xl w-[60%] font-semibold text-white">Discover the best hotel in Greece</h1>
                                 <div className="bg-white p-1 h-[60%] text-center rounded-md  text-xs">From <span className="text-[#276968] text-sm">$600</span></div>
                             </div>
-                            <p className="font-thin text-xs text-white opacity-70">Adventure cruising is more than a growing trend to connect with nature, wildlife, and yourself. It's a community of adventurers that is here to stay. With luxurious accommodations and unmatched scenery, our Baja kayaking is the perfect escape.</p>
+                            <p className="font-thin text-xs text-white opacity-70">Adventure cruising is more than a growing trend to connect with nature, wildlife, and yourself. It&apos;s a community of adventurers that is here to stay. With luxurious accommodations and unmatched scenery, our Baja kayaking is the perfect escape.</p>
                         </div>
                         <button className="w-full rounded-md p-2 text-center text-[#276968] bg-white">
                             Book hotel
