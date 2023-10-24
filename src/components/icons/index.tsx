@@ -43,3 +43,11 @@ export const CaseIcon = ({ size }: { size?: number }) => (
         </svg>
     </div>
  );
+
+ export const EditIcon = ({ size }: { size?: number }) => (
+   <div style={{ width: size ?? 20 }}>
+       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+         <path d="M0.5 18.25V3.25H9.60417L3.83333 9.02083V14.9167H9.72917L15.5 9.125V18.25H0.5ZM5.5 13.25V9.70833L11.4792 3.72917L15.0417 7.22917L9.04167 13.25H5.5ZM16.2292 6.04167L12.6667 2.54167L14.7708 0.4375L18.2708 4L16.2292 6.04167Z" fill="#276968"/>
+      </svg>
+   </div>
+);

@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import AccountInfo from "./features/account";
 import History from "./features/history";
 import Payment from "./features/payment";
+import Footer from "@/components/footer";
 
 
 const Account = () => {
@@ -23,7 +24,7 @@ const Account = () => {
                     </div>
                 </div>
                 <div className="w-full p-10">
-                    <div className="bg-white shadow-md rounded-md shadow-slate-100 w-full mx-auto y-4 flex flex-row justify-between">
+                    <div className="bg-[#FAFBFC] shadow-md rounded-md shadow-slate-100 w-full mx-auto y-4 flex flex-row justify-between">
                         <div className={`${showModalInfo === "account" ? "border-green-500 w-[35%] border-b-4 my-0 flex rounded-sm justify-center place-items-center flex-col py-2 px-4" : "text-center border-r-2 w-[35%] my-4 py-2 min-w-[30vw] px-4 border-slate-200"}`} onClick={() => setShowModal("account")}>
                             <h1 className="text-[14px]">Account</h1>
                         </div>
@@ -45,6 +46,7 @@ const Account = () => {
                     }
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
