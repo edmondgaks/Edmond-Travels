@@ -52,8 +52,8 @@ const Signup = () => {
           alt="Logo for edmond travels"
         />
       </div>
-      <form className="bg-white w-[40%] rounded-md p-8 flex flex-col gap-3 justify-center">
-        <div className="flex flex-col gap-1 justify-center">
+      <form className="bg-white w-[40%] rounded-md p-8 flex flex-col gap-2 justify-center">
+        <div className="flex flex-col justify-center">
           <h1 className="text-xl font-semibold text-[#051721] tracking-wider">
             Sign up
           </h1>
@@ -62,7 +62,7 @@ const Signup = () => {
             account.
           </p>
         </div>
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col">
           <h1 className="text-xs font-medium">Full Name</h1>
           <input
             type="text"
@@ -74,7 +74,7 @@ const Signup = () => {
           />
         </div>
         <div className="flex flex-row justify-between w-full">
-          <div className="flex flex-col gap-1 w-[48%]">
+          <div className="flex flex-col w-[48%]">
             <h1 className="text-xs font-medium">Email</h1>
             <input
               type="email"
@@ -85,7 +85,7 @@ const Signup = () => {
               onChange={handleEmailChange}
             />
           </div>
-          <div className="flex flex-col gap-1 w-[48%]">
+          <div className="flex flex-col w-[48%]">
             <h1 className="text-xs font-medium">Phone Number</h1>
             <input
               type="email"
@@ -97,7 +97,7 @@ const Signup = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col">
           <h1 className="text-xs font-medium">Password</h1>
           <input
             type="password"
@@ -108,7 +108,7 @@ const Signup = () => {
             onChange={handlePasswordChange}
           />
         </div>
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col">
           <h1 className="text-xs font-medium">Confirm Password</h1>
           <input
             type="password"
