@@ -28,7 +28,7 @@ const AccountInfoData = ({ value, label }: { label: any, value: any }) => {
             <div>
                 <button className="bg-white border-[#276968] text-black px-5 text-sm rounded-md  duration-300 flex justify-center gap-2 py-3 border-2">
                     <EditIcon />
-                    <span className="text-[12px]">Change</span>
+                    <span className="text-[12px]">Edit</span>
                 </button>
             </div>
         </div>

@@ -38,7 +38,7 @@ export const UserProfile = () => {
                         <div className="flex flex-row justify-between items-center">
                             <div className="flex flex-row gap-2 items-center">
                                 <UserCircle size={18} />
-                                <h1 className="text-xs font-medium text-[#37454D]">My account</h1>
+                                <Link href="/account" className="text-xs font-medium text-[#37454D]">My account</Link>
                             </div>
                             <ChevronRight size={20} />
                         </div>
