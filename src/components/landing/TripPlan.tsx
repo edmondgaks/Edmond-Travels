@@ -4,9 +4,9 @@ const TripPlan = () => {
     return (
         <div className="w-full flex flex-row p-10 items-center justify-center">
             {/* <div className="w-[50%] flex flex-row "> */}
-                <Image src={"/Rectangle 8.png"} alt="Image 1 trip" width={200} height={200} className="z-0" />
-                <Image src={"/Rectangle 10.png"} alt="Image 2 trip" width={180} height={180} className="z-10 -translate-x-10 translate-y-4" />
-                <Image src={"/Rectangle 9.png"} alt="Image 3 trip" width={120} height={120} className="z-20 -translate-x-20 -translate-y-10" />
+                <Image src={"/Rectangle 8.png"} alt="Image 1 trip" width={200} height={200} loading="lazy" className="z-0" />
+                <Image src={"/Rectangle 10.png"} alt="Image 2 trip" width={180} height={180} loading="lazy" className="z-10 -translate-x-10 translate-y-4" />
+                <Image src={"/Rectangle 9.png"} alt="Image 3 trip" width={120} height={120} loading="lazy" className="z-20 -translate-x-20 -translate-y-10" />
             {/* </div> */}
             <div className="flex flex-col gap-2 w-[50%] justify-center">
                 <p className="text-xs text-[#276968] font-semibold">About</p>

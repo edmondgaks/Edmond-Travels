@@ -13,7 +13,7 @@ const DiscoverLove = () => {
             </div>
             <div className="w-full mb-10 flex flex-row gap-3 items-center justify-between">
                 <div className="flex flex-col gap-2 p-3 rounded-lg shadow-lg bg-[#FAFBFC]">
-                    <Image src={"/discover1.png"} width={400} height={400} alt="thailand" className="" />
+                    <Image src={"/discover1.png"} width={400} height={400} alt="thailand" className="" loading="lazy" />
                     <div className="w-full flex flex-row items-center justify-between">
                         <div className="flex flex-col gap-1 justify-center">
                             <h1 className="text-[#276968] text-xl font-semibold">Phuket</h1>
@@ -25,7 +25,7 @@ const DiscoverLove = () => {
                     </div>
                 </div>
                 <div className="flex flex-col gap-2 p-3 rounded-lg shadow-lg bg-[#FAFBFC]">
-                    <Image src={"/discover2.png"} width={400} height={400} alt="thailand" className="" />
+                    <Image src={"/discover2.png"} width={400} height={400} alt="thailand" className="" loading="lazy" />
                     <div className="w-full flex flex-row items-center justify-between">
                         <div className="flex flex-col gap-1 justify-center">
                             <h1 className="text-[#276968] text-xl font-semibold">Santarin</h1>
@@ -37,7 +37,7 @@ const DiscoverLove = () => {
                     </div>
                 </div>
                 <div className="flex flex-col gap-2 p-3 rounded-lg shadow-lg bg-[#FAFBFC]">
-                    <Image src={"/discover2.png"} width={400} height={400} alt="thailand" className="" />
+                    <Image src={"/discover2.png"} width={400} height={400} alt="thailand" className="" loading="lazy" />
                     <div className="w-full flex flex-row items-center justify-between">
                         <div className="flex flex-col gap-1 justify-center">
                             <h1 className="text-[#276968] text-xl font-semibold">Paris </h1>
