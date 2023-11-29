@@ -1,12 +1,15 @@
-import { MapPin, UserCircle2, Calendar, Navigation, Search } from "lucide-react"
-import AuthButtons from "@/components/AuthButton"
-import Logo from "@/components/Logo"
-import Navbar from "@/components/Navbar"
+import { MapPin, UserCircle2, Calendar, Navigation, Search } from "lucide-react";
+import dynamic from 'next/dynamic';
+const AuthButtons = dynamic(() => import('@/components/AuthButton'));
+const Logo = dynamic(() => import('@/components/Logo'));
+const Navbar = dynamic(() => import('@/components/Navbar'));
 
 const Landing = () => {
     return (
         <div className="p-3">
-            <div className="bg-[url('/landing-page.png')] w-full bg-fixed bg-cover rounded-md h-[96vh] box-border">
+            <div 
+            style={{ backgroundImage: `url('/landing-page.png')` }}
+            className=" w-full bg-fixed bg-cover rounded-md h-[96vh] box-border">
                 <div className="mx-auto flex flex-row items-center  justify-around py-5">
                     <Logo />
                     <Navbar />

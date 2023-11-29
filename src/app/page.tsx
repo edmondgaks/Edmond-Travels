@@ -1,9 +1,12 @@
 import Image from 'next/image'
-import Footer from "@/components/footer"
-import DiscoverLove from '@/components/landing/DiscoverLove'
-import Testimonials from '@/components/landing/Testimonials'
-import Landing from '@/components/landing/landing'
-import TripPlan from '@/components/landing/TripPlan'
+import dynamic from 'next/dynamic';
+import Footer from '@/components/footer';
+
+const Landing = dynamic(() => import('@/components/landing/landing'));
+const TripPlan = dynamic(() => import('@/components/landing/TripPlan'));
+const DiscoverLove = dynamic(() => import('@/components/landing/DiscoverLove'));
+const Testimonials = dynamic(() => import('@/components/landing/Testimonials'));
+
 
 export default function Home() {
   return (
